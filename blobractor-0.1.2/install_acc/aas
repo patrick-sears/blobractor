@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+
+# d="$HOME/bin/blobractor_d"
+!INSTALL_LOCATION
+
+b=`getconf LONG_BIT`
+
+
+# Crazy way to keep spaces.
+arlis=( "$@" )
+
+if [[ "$b" = "32" ]]; then
+  $install_dir/aabin-32 --install_dir "$install_dir" "${arlis[@]}"
+
+elif [[ "$b" = "64" ]]; then
+  $install_dir/aabin-64 --install_dir "$install_dir" "${arlis[@]}"
+
+else
+  echo "Couldn't understand getconf LONG_BIT."
+  exit 1
+fi
+
+
+
+
+

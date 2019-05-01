@@ -1,0 +1,59 @@
+/home/pat/progs
+/home/pat/bin
+
+
+Only the first two lines of this file are read.
+
+
+The first line is the place to install the program directory.
+Using !inplace will make it install in place without creating
+a new directory.
+
+
+The second line is the place where it should create a symlink
+to the binary in the main install directory.  Note that you
+will either need to have this directory in your $PATH or
+call the program with the path to this directory.
+
+
+
+
+
+_______________________________________________________
+Examples.
+
+
+---------------------------------
+/home/pat/progs
+/home/pat/bin
+---------------------------------
+
+
+---------------------------------
+!inplace
+/home/pat/bin
+---------------------------------
+
+---------------------------------
+!inplace
+.
+---------------------------------
+
+
+---------------------------------
+/home/pat/progs
+/home/pat/bin
+---------------------------------
+
+
+
+---------------------------------
+/usr/local/share
+/usr/local/bin
+---------------------------------
+
+
+
+
+
+

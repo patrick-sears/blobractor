@@ -1,0 +1,80 @@
+
+
+blobractor/strarctor2 README
+
+
+-------------------------------------------------------
+As of 2016-10-05:  2016 0810v14a--prs-stractor2/
+  version 0.0.4
+As of 2018-06-05:  2018  0531v00a--prs-blobractor/
+  version 0.1.0
+As of 2018-10-15:  2018  0531v00a--prs-blobractor/
+  version 0.1.1
+As of 2019-05-01:  2019  0501v12a--prs-blobractor/
+  version 0.1.2
+-------------------------------------------------------
+
+
+Most of this file needs to be updated to the blobractor
+system.
+
+
+-------------------------------------------------------
+Basic procedure for exporting all images from 
+all videos.
+-------------------------------------------------------
+1.  - Go to $HOME/bin/stractor2_d/example_setup, and 
+      copy the file 
+        aa
+        stractor.config
+      to your working directory.
+2.  - Alter the config file so that !indir gives the 
+      path to the SAVA folder containing the 
+        Video yyyymmdd hhmmss
+      folders.
+3.  - If needed, alter it to have !oudir point to a 
+      different location to place exported images.
+4.  - Do
+        ./aa
+5.  - stractor2 with create a dirlist.  It will be 
+      called stractor2-dir.list if the config file
+      isn't changed.
+6.  - stractor2 will then create a v### folder for
+      each video in the oudir folder and export 
+      all the images to these folders.
+7.  - Move the video folders to wherever you would 
+      like to store them.
+-------------------------------------------------------
+
+
+
+-------------------------------------------------------
+Some errors you may encounter.
+-------------------------------------------------------
+- If the dirlist file already exists, it will quit so
+  as not to overwrite it.
+- If it finds a v### folder for a video that it is 
+  expected to export, it will quit before creating 
+  any v### folder.  So if it quits for this reason,
+  the output directory should not have been changed.
+-------------------------------------------------------
+
+
+
+
+
+
+-------------------------------------------------------
+To install:
+  - Copy the entire directory to the desired place.
+  - Do
+      ./install.sh
+-------------------------------------------------------
+
+
+
+
+
+
+
+
